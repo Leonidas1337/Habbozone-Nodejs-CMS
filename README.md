@@ -1,7 +1,18 @@
+/*
+    KUBBO CMS - main
+* * * * * * * * * * * * * * 
+*                         *
+*   #     #   # # # #     *
+*   #     #         #     *
+*   # # # #       #       *
+*   #     #     #         *
+*   #     #    # # # #    *
+*                    CMS  *
+* * * * * * * * * * * * * *
 Powered by hzCMS 
-Website: https://habbo.zone
-
+Website: https://habbo.zone/
 Created by Habbo.Zone Development Team
-HolyFuture & INCepted (Coding)
+HolyFuture (Coding) 
 and Leonidas (Webdesign)
-
+Discord: https://discord.gg/3HZfVkm
+*/
