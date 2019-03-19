@@ -1,0 +1,294 @@
+@font-face {
+  font-family: eurostile;
+  src: url("../fonts/eurostile.ttf");
+}
+
+html, body {
+	background:#6DB3F2 url("../img/index_bg.png") no-repeat center center fixed;
+	background-size:cover;
+	background-position:center bottom;
+	overflow-x:hidden;
+}
+
+.front-header {
+	display:inline-block;
+	width:100%;
+	height:90px;
+	background:url("../img/index_header.png") repeat-x;
+}
+
+.front-header .header-logo {
+	width:172px;
+	height:65px;
+	background-image:url("../img/logo.png");
+	margin:10px auto;
+
+	-webkit-transition:opacity 0.15s ease-in;
+	-moz-transition:opacity 0.15s ease-in;
+	-ms-transition:opacity 0.15s ease-in;
+	-o-transition:opacity 0.15s ease-in;
+	transition:opacity 0.15s ease-in;
+}
+
+.front-header .header-logo:hover {
+	opacity:0.8;
+}
+
+.login-container {
+	height:320px;
+	width:480px;
+	margin:5% auto;
+	position:relative;
+}
+
+.login-inner-box {
+	background:rgba(12,12,12,1);
+	height:260px;
+	width:100%;
+	box-shadow:0px 0px 30px rgba(0,0,0,0.7);
+	bottom:0;
+	position:absolute;
+}
+
+.login-inner-box > .register-link {
+	background-image:url("../img/register_link.png");
+	height:100%;
+	width:180px;
+	float:left;
+	cursor:pointer;
+
+	-webkit-transition:opacity 0.15s ease-in;
+	-moz-transition:opacity 0.15s ease-in;
+	-ms-transition:opacity 0.15s ease-in;
+	-o-transition:opacity 0.15s ease-in;
+	transition:opacity 0.15s ease-in;
+}
+
+.login-inner-box > .register-link:hover {
+	opacity:0.8;
+}
+
+.login-inner-box > .login-form {
+	height:100%;
+	width:calc(100% - 230px);
+	float:left;
+	padding:25px;
+}
+
+.login-inner-box .login-title {
+	color:#fff;
+	font-family:eurostile;
+	float:left;
+	margin-bottom:5px;
+	text-align:left;
+}
+
+.register-login-input {
+	border-color:rgba(255,255,255,0.7);
+}
+
+.register-login-input,
+.register-login-input:focus {
+	background:transparent;
+	margin-bottom:10px;
+	width:100%;
+	height:30px;
+	color:#fff;
+}
+
+.register-login-input:first-child {
+	margin-bottom:0;
+}
+
+.login-inner-box label {
+	font-family:eurostile;
+}
+
+.login-inner-box .login-button {
+	width:100%;
+	margin-top:5px;
+}
+
+.uk-alert-danger {
+	background-color:#f33939;
+	color:#fff;
+}
+
+.front-info-container {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width:480px;
+	height:100px;
+	margin:calc(10px + -5%) auto;
+}
+
+.front-info-container .habbo-music-player {
+	height:40px;
+	width:180px;
+	background:rgba(12,12,12,0.9);
+	margin:0 auto;
+}
+
+.front-info-container .habbo-music-player .music-title {
+	color:#ccc;
+	font-size:11pt;
+	line-height:40px;
+	float:left;
+	width:140px;
+}
+
+
+.front-info-container .habbo-music-player .play-button {
+	float:left;
+	width:40px;
+	height:40px;
+	background:rgba(30,30,30,1);
+	color:#ff;
+	text-align:center;
+	line-height:30px;
+	font-size:30px;
+	cursor:pointer;
+
+	-webkit-transition:all 0.15s ease-in;
+	-moz-transition:all 0.15s ease-in;
+	-ms-transition:all 0.15s ease-in;
+	-o-transition:all 0.15s ease-in;
+	transition:all 0.15s ease-in;
+}
+
+.front-info-container .habbo-music-player .play-button:hover {
+	color:#fff;
+	background:rgba(40,40,40,1);
+}
+
+.front-info-box .info-icon {
+	float:left;
+	width:80px;
+	height:80px;
+	background:#000;
+}
+
+.front-info-box	 .info-text {
+	padding:5px;
+	font-size:10pt;
+	margin-left:5px;
+	display:inline-block;
+	float:left;
+	width:60%;
+	height:100%;
+}
+
+.index-footer {
+	width:480px;
+	height:30px;
+	margin:5% auto;
+	text-align:center;
+	font-size:9pt;
+	color:#9e9e9e;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+
+.register-container {
+	height:700px;
+	width:393px;
+	margin:5% auto;
+	position:relative;
+}
+
+.register-inner-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background:rgba(12,12,12,1);
+	height:640px;
+	width:100%;
+	box-shadow:0px 0px 30px rgba(0,0,0,0.7);
+	bottom:0;
+	position:absolute;
+}
+
+.register-inner-box .register-form {
+	padding:25px;
+}
+
+.register-inner-box .register-header {
+	width:100%;
+	height:80px;
+	background:url("../img/register_header.png");
+}
+
+.register-inner-box > .register-link:hover {
+	opacity:0.8;
+}
+
+.register-inner-box > .login-form {
+	height:100%;
+	width:100%;
+	float:left;
+	padding:25px;
+}
+
+.register-inner-box .login-title {
+	color:#fff;
+	font-family:eurostile;
+	float:left;
+	margin-bottom:5px;
+	text-align:left;
+}
+
+.register-login-input {
+	border-color:rgba(255,255,255,0.7);
+}
+
+.register-login-input,
+.register-login-input:focus {
+	background:transparent;
+	margin-bottom:10px;
+	width:100%;
+	height:30px;
+	color:#fff;
+}
+
+.register-login-input:first-child {
+	margin-bottom:0;
+}
+
+.register-inner-box label {
+	font-family:eurostile;
+}
+
+.register-inner-box .register-button {
+	width:100%;
+	margin-top:10px;
+}
+
+.register-form .gender-selection {
+	margin-bottom:5px;
+}
+
+.register-form .gender-selection div {
+	width:172px;
+}
+
+.register-form .login-back-link {
+	color:#c0c0c0;
+	text-align:center;
+	text-decoration:none;
+	font-size:9pt;
+
+	-webkit-transition:color 0.2s ease-in;
+	-moz-transition:color 0.2s ease-in;
+	-ms-transition:color 0.2s ease-in;
+	-o-transition:color 0.2s ease-in;
+	transition:color 0.2s ease-in;
+}
+
+.register-form .login-back-link:hover {
+	color:#fff;
+}
+
+.habbo-cloud {
+	position:absolute;
+	z-index:0;
+}

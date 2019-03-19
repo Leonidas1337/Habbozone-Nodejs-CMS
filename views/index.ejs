@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<% include ../templates/head.tpl %>
+
+<body>
+	<div class="front-header">
+		<a href="/">
+			<div class="header-logo"></div>
+		</a>
+	</div>
+
+	<div class="login-container" <% if (register) { %> style="display:none;" <% } %>>
+		<% if (loginError && loginError.length > 0) { %>
+			<div uk-alert class="uk-alert-danger">
+				<a class="uk-alert-close" uk-close></a>
+				<%= loginError[0] %>
+			</div>
+		<% } %>
+
+		<div class="login-inner-box">
+			<div class="register-link"></div>
+
+			<div class="login-form">
+				<h4 class="login-title">Willkommen im Kubbo Hotel</h4>
+
+				<form method="post" action="/login">
+					<label for="username">Username</label>
+					<input type="text" class="uk-input register-login-input" name="username" autocomplete="off" />
+
+					<label for="password">Passwort</label>
+					<input type="password" class="uk-input register-login-input" name="password" autocomplete="off" />
+
+					<button class="uk-button uk-button-primary login-button">Login</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="register-container" <% if (login) { %> style="display:none;" <% } %>>
+		<% if (registerError && registerError.length > 0) { %>
+			<div uk-alert class="uk-alert-danger">
+				<a class="uk-alert-close" uk-close></a>
+				<%= registerError[0] %>
+			</div>
+		<% } %>
+
+		<div class="register-inner-box">
+			<div class="register-header"></div>
+
+			<div class="register-form">
+				<form method="post" action="/register">
+					<label for="username">Username</label>
+					<input type="text" class="uk-input register-login-input" name="username" autocomplete="off" />
+
+					<label for="password">Passwort</label>
+					<input type="password" class="uk-input register-login-input" name="password" autocomplete="off" />
+
+					<label for="password">Passwort wiederholen</label>
+					<input type="password" class="uk-input register-login-input" name="password2" autocomplete="off" />
+
+					<label for="password">E-Mail Adresse</label>
+					<input type="email" class="uk-input register-login-input" name="mail" autocomplete="off" />
+
+					<label for="password">Geburtsdatum</label>
+					<input type="date" class="uk-input register-login-input" name="birthday" autocomplete="off" />
+
+					<div class="uk-button-group gender-selection">
+					    <div class="uk-button uk-button-default" value="M">Junge</div>
+					    <div class="uk-button uk-button-default" value="F">Mädchen</div>
+					</div>
+
+					<div class="gender-values" style="display:none;">
+						<input type="radio" name="gender" value="M"> Male<br>
+						<input type="radio" name="gender" value="F"> Female<br>
+					</div>
+
+					<div class="g-recaptcha" data-theme="dark" data-size="normal" style="margin-top:5px" data-sitekey="6LdogZcUAAAAALisvE4vlU24stDg0TagQh7U6s-q"></div>
+
+					<button class="uk-button uk-button-primary register-button">Registrieren</button>
+					<a href="#" class="login-back-link">Ich hab bereits ein Account</a>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="front-info-container">
+		<div class="habbo-music-player">
+			<div class="play-button">
+				<span uk-icon="icon: close; ratio:1;" class="play"></span>
+				<span uk-icon="icon: play; ratio:1.5;" class="pause" style="display:none;"></span>
+			</div>
+
+			<marquee class="music-title">Background Music</marquee>
+		</div>
+	</div>
+
+
+	<div class="index-footer">
+		<span>Copyright &copy; Kubbo 2019</span><br>
+		<span>All rights reserved to their respective owner(s). Kubbo is in no way endorsed, affiliated or offered by Sulake Corporation Oy.</span>
+	</div>
+</body>
+
+<script src="assets/js/index.js"></script>
+
+</html>
