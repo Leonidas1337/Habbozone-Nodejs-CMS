@@ -1,5 +1,3 @@
-# Habbozone-Nodejs-CMS
-
 * * * * * * * * * * * * * * 
 *                         *
 *   #     #   # # # #     *
@@ -7,13 +5,12 @@
 *   # # # #       #       *
 *   #     #     #         *
 *   #     #    # # # #    *
-*                    CMS  *
+*                    CMS  *                 
 * * * * * * * * * * * * * *
-
 Powered by hzCMS 
-Website: https://habbo.zone/
+Website: https://habbo.zone
+
 Created by Habbo.Zone Development Team
-HolyFuture (Coding) 
-INCepted (Coding)
+HolyFuture & INCepted (Coding)
 and Leonidas (Webdesign)
-Discord: https://discord.gg/3HZfVkm
+
